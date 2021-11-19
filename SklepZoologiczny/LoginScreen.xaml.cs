@@ -33,7 +33,7 @@ namespace SklepZoologiczny
             {
                 if (sqlCon.State == ConnectionState.Closed)
                     sqlCon.Open();
-                String query = "SELECT COUNT(1) FROM tblUser WHERE Username=@UserName AND Password=@Password";
+                String query = "SELECT COUNT(1) FROM tblUser WHERE Username=@UserName AND Password=@Password ";
                 SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
                 sqlCmd.CommandType = CommandType.Text;
                 sqlCmd.Parameters.AddWithValue("@username", txtun.Text);
@@ -66,7 +66,14 @@ namespace SklepZoologiczny
            dashboard.Show();
                     Close();
                 }
-            }
+
+        private void btnForget_Click(object sender, RoutedEventArgs e)
+        {
+            ForgetPassword dashboard = new ForgetPassword();
+            dashboard.Show();
+            Close();
+        }
+    }
         }
 
 

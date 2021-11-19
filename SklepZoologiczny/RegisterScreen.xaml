@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SklepZoologiczny"
         mc:Ignorable="d"
-          Title="Zarejestruj się" Height="439.137" Width="720.083" FontSize="14" Background="#30e691">
+          Title="Zarejestruj się" Height="498.165" Width="720.083" FontSize="14" Background="#30e691">
     <Border Background="White" CornerRadius="20" Margin="20">
         <StackPanel Margin="20">
             <Label Content="Zarejestruj się po więcej interesujących rzeczy!" Foreground="Black" FontSize="25" HorizontalAlignment="Center"/>
@@ -13,10 +13,12 @@
 
             <Label Content="Nazwa użytkownika:" Foreground="Black"/>
             <TextBox Name="txtun" Background="LightGray" Foreground="Black" FontSize="18"/>
-            <Label Content="Hasło:" Foreground="Black"/>
+            <Label Content="Adres e-mail:" Foreground="Black"/>
+            <TextBox Name="txtemail" Background="LightGray" Foreground="Black" FontSize="18" />
+            <Label Content="Hasło: (Minimum 8 znaków)" Foreground="Black"/>
             <PasswordBox Name="txtpsw" Background="LightGray" Foreground="Black" FontSize="18"/>
             <Label Content="Potwierdź hasło:" Foreground="Black"/>
-            <PasswordBox Name="txtcompsw" Background="LightGray" Foreground="Black" FontSize="18"/>
+            <PasswordBox x:Name="txtcompsw" Background="LightGray" Foreground="Black" FontSize="18"/>
             <Button x:Name="btnjoin" Click="btnSumbit_Click" Content="Dołącz do nas" Margin="6,80,1,10" Background="#30e691" Foreground="Black" FontSize="18" Height="31"/>
         </StackPanel>
     </Border>
